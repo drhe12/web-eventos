@@ -5,7 +5,17 @@ import { TiTicket } from "react-icons/ti";
 
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
-import { Nav, NavbarContainer, NavLogo } from "./headerElements";
+import {
+  MobileIcon,
+  Nav,
+  NavbarContainer,
+  NavBtn,
+  NavBtnLink,
+  NavItem,
+  NavLinks,
+  NavLogo,
+  NavMenu,
+} from "./headerElements";
 
 export const Header = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -38,6 +48,32 @@ export const Header = ({ toggle }) => {
               />
               taquiYa
             </NavLogo>
+            <MobileIcon onClick={toggle}>
+              <FaBars />
+            </MobileIcon>
+            <NavMenu>
+              <NavItem>
+                <NavLinks>Destacados</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks>Música</NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks>Teatro</NavLinks>
+              </NavItem>
+            </NavMenu>
+            <NavBtn>
+              <NavBtnLink
+                to="/signin"
+                smooth={true.toString()}
+                duration={500}
+                spy={true.toString()}
+                exact="true"
+                offset={-80}
+              >
+                Iniciar sesión
+              </NavBtnLink>
+            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
