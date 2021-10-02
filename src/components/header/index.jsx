@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMusic, FaStar, FaTheaterMasks } from "react-icons/fa";
 import { TiTicket } from "react-icons/ti";
+import { GoSearch } from "react-icons/go";
 
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
@@ -15,6 +16,8 @@ import {
   NavLinks,
   NavLogo,
   NavMenu,
+  Search,
+  SearchInput,
 } from "./headerElements";
 
 export const Header = ({ toggle }) => {
@@ -52,14 +55,30 @@ export const Header = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
+              <Search>
+                <GoSearch
+                  size={24}
+                  style={{ color: "#d5d5d5", margin: "0 10" }}
+                />
+                <SearchInput placeholder="conciertos, teatro y más"></SearchInput>
+              </Search>
               <NavItem>
-                <NavLinks>Destacados</NavLinks>
+                <NavLinks>
+                  Destacados
+                  {/* <FaStar style={{ margin: "0 5" }} /> */}
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>Música</NavLinks>
+                <NavLinks>
+                  Música
+                  {/* <FaMusic style={{ margin: "0 5" }} /> */}
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks>Teatro</NavLinks>
+                <NavLinks>
+                  Teatro
+                  {/* <FaTheaterMasks style={{ margin: "0 5" }} /> */}
+                </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>

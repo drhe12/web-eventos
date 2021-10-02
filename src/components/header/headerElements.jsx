@@ -115,3 +115,39 @@ export const NavBtnLink = styled(LinkR)`
     color: #010606;
   }
 `;
+
+export const Search = styled.div`
+  align-self: center;
+  background: #fff;
+  height: 32px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+
+  @media screen and (max-width: 960px) {
+    width: 180px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 150px;
+  }
+`;
+
+export const SearchInput = styled.input`
+  height: 30px;
+  font-size: 17px;
+  width: 245px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+
+  @media screen and (max-width: 960px) {
+    width: 125px;
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 95px;
+    font-size: 16px;
+  }
+`;
