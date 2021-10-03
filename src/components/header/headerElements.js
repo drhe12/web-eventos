@@ -119,7 +119,7 @@ export const NavBtnLink = styled(LinkR)`
 export const Search = styled.div`
   align-self: center;
   background: #fff;
-  height: 32px;
+  height: 35px;
   width: 300px;
   display: flex;
   align-items: center;
@@ -138,6 +138,7 @@ export const SearchInput = styled.input`
   height: 30px;
   font-size: 17px;
   width: 245px;
+  padding: 0 2px;
   border-radius: 10px;
   border: 0;
   outline: 0;
