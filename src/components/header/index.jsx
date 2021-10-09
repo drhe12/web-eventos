@@ -46,8 +46,8 @@ export const Header = ({ toggle }) => {
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               <TiTicket
-                size={40}
-                style={{ marginRight: 10, color: "#01bf71" }}
+                size={35}
+                style={{ marginRight: 5, color: "#01bf71" }}
               />
               taquiYa
             </NavLogo>

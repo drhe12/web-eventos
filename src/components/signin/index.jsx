@@ -1,4 +1,6 @@
 import React from "react";
+import { TiTicket } from "react-icons/ti";
+
 import {
   Container,
   Form,
@@ -17,16 +19,25 @@ export const SignIn = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">taquiYa</Icon>
+          <Icon to="/">
+            <TiTicket
+              size={35}
+              style={{
+                marginRight: 5,
+                color: "#fff",
+              }}
+            />
+            taquiYa
+          </Icon>
           <FormContent>
             <Form action="#">
-              <FormH1>Inicia Sesión</FormH1>
+              <FormH1>Iniciar Sesión</FormH1>
               <FormLabel htmlFor="for">Correo</FormLabel>
               <FormInput type="email" required />
               <FormLabel htmlFor="for">Contraseña</FormLabel>
               <FormInput type="password" required />
               <FormButton type="submit">Ingresar</FormButton>
-              <Text>Olvidaste tu contraseña?</Text>
+              <Text>¿Olvidaste tu contraseña?</Text>
             </Form>
           </FormContent>
         </FormWrap>
